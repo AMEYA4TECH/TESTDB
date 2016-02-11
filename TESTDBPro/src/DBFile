@@ -1,0 +1,23 @@
+CREATE TABLE `product` (
+  `ID` varchar(20) NOT NULL,
+  `Name` varchar(20) NOT NULL,
+  `Decr` varchar(20) NOT NULL,
+  `Catagory` varchar(20) DEFAULT NULL,
+  `Color` varchar(20) DEFAULT NULL,
+  `Material` varchar(20) DEFAULT NULL,
+  `Shape` varchar(20) DEFAULT NULL,
+  `Origin` varchar(20) DEFAULT NULL
+) ;
+
+Insert into product values('344','344product','this is testpro','Rings','red','iron','oval','india');
+
+select * from product where Name='testpro';
+
+DELETE FROM product WHERE ID = '1125';
+
+drop table product
+
+
+	
+SELECT COUNT(ID) AS IDCount FROM product WHERE ID='675';
+
